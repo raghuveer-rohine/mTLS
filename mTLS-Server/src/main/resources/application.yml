@@ -1,0 +1,11 @@
+server:
+  port: 8443  # can be changed
+  ssl:
+    enabled: true
+    key-store: classpath:server.p12
+    key-store-password: password
+    key-store-type: PKCS12
+    trust-store: classpath:ca.p12
+    trust-store-password: password
+    trust-store-type: PKCS12
+    client-auth: need
